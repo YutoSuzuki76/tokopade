@@ -1,0 +1,46 @@
+{% extends "app_folder_HTML/tokopade_base2.html" %}
+{% load static %}
+
+{% block content_block %}
+<div class="jumbotron">
+
+  <h2>大会</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">大会回数</th>
+        <th scope="col">大会名</th>
+        <th scope="col">開催日</th>
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>{{ tokopade_detail.number }}</td>
+        <td>{{ tokopade_detail.name }}</td>
+        <td>{{ tokopade_detail.date }}</td>
+      </tr>
+    <tbody>
+  </table>
+
+
+  <h2>選手</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">選手名</th>
+      <th scope="col">順位</th>
+      <th scope="col">獲得ポイント</th>
+  </tr>
+</thead>
+  <tbody>
+      {% for player in tokopade_detail.Players.all %}
+      <tr>
+        <td>{{ player.name }}</td>
+        <td>{{ player.ranking }}</td>
+        <td>{{ player.point }}</td>
+      </tr>
+      {% endfor %}
+  <tbody>
+</table>
+
+{% endblock %}

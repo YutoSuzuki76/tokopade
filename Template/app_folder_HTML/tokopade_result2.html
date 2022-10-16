@@ -1,0 +1,19 @@
+{% extends "app_folder_HTML/tokopade_navbar.html" %}
+{% load static %}
+
+{% block content_block %}
+
+<h1 align="center" style="margin:30px; font-family: CiutadellaBold; font-size: 38px;" >RESULT</h1>
+
+<table class="table">
+    <tbody>
+      {% for tokopade in tokopade_list %}
+      <tr>
+        <td>{{ tokopade.tournament }}{{ tokopade.name }}</td>
+        <td><a href="detail/{{ tokopade.id }}">大会結果</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}

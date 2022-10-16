@@ -1,0 +1,105 @@
+.c-ranking__title{
+    margin-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 6px solid #EEF3F4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    background-color: #EEF3F4;
+}
+
+.c-ranking__block{
+    overflow: auto;
+    border: 5px solid #EEF3F4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 500px;
+    padding: 0px;
+    display: block;
+}
+
+.c-advert__container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ranking_table{
+    border:solid 1px #aaaaaa;
+    width: 70%;
+    margin: auto;
+}
+
+.ranking_table th{
+    border:solid 1px #aaaaaa;
+    width: 30%;
+}
+
+.ranking_table td{
+    border:solid 1px #aaaaaa;
+}
+
+.blank{
+    border: 5px solid #FFF;
+}
+
+.c-player{
+    border: 5px solid #EEF3F4;
+}
+
+.c-player-card__header{
+    width: 400px;
+    height: 100px;
+    padding: 0px 0px 0px 0px;    
+    background: #FFF;
+}
+
+.c-player-card__footer{
+    width: 400px;
+    height: 60px;
+    padding: 0px 0px 0px 0px;
+}
+
+.l-wrapper{
+    float: left;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    background: #69DFE6;
+}
+
+.c-player-card__score{
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 200px;
+    height: 60px;
+    padding: 10px;
+    background: #69DFE6;
+    color: #22356D;
+}
+
+.c-player-card__position{
+    font-size: 30px;
+    color: #22356D;
+}
+
+.c-player-card__name{
+    font-size: 20px;
+    color: #22356D;
+}
+
+.c-player-card__item{
+    display: flex;
+    padding: 0px;
+}
+
+
+.c-player-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

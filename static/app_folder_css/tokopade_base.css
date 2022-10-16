@@ -1,0 +1,18 @@
+.section__title{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 0px;
+    margin: 40px 0px;
+    color: #281E1E;
+    font-size: 35px;
+    font-family: "CiutadellaBold";
+    font-weight:bold; 
+}
+
+.section__title:before{
+    border-top: 1px solid;
+    border-width: 5px;
+    content: "";
+    width: 1em;
+    margin-right: 10px;
+}

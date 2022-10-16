@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+   <title>所沢パデルな人たち</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <link rel="stylesheet" href="../../static/css/bootstrap.css">
+   <link rel="stylesheet" href="../../static/app_folder_css/tokopade_navbar.css">
+   <link rel="stylesheet" href="../../static/app_folder_css/tokopade_base.css">
+   <link rel="stylesheet" href="../../static/app_folder_css/tokopade_ranking.css">
+   <link rel="stylesheet" href="../../static/app_folder_css/tokopade_result.css">
+   <script type="text/javascript" src="../../static/js/jquery-3.6.1.js"></script>
+   <script type="text/javascript" src="../../static/js/bootstrap.js"></script>
+  </head>
+ <body>
+    <header class="header" id="header">
+        <div class="header_logo"> 
+            <img src="../../static/images/tokopade_logo.jpg" width="150px" height="120px">  
+        </div>
+
+        <div class="header-line__container">
+            <div class="header-line__container_item">
+                <div class="triangle1"></div>   
+                <div class="square"></div>
+                <div class="triangle2"></div>             
+            </div>
+            <div class="header-line__container_blank"></div>
+            <div class="header-line__container_item">
+                <div class="triangle1"></div>   
+                <div class="square"></div>
+                <div class="triangle2"></div>             
+            </div>
+        </div>
+
+        <div class="header-line__item"></div>
+        <nav class="main-navar" style="background-color:#69DFE6;" id="main-navar">
+                <ul class="nav nav-pills justify-content-md-center">
+                    <li class="nav-item"><a href="tokopade_home" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="tokopade_result2" class="nav-link">RESULT</a></li>
+                    <li class="nav-item"><a href="ranking" class="nav-link">RANKING</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ART</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+                </ul>
+        </nav>
+    </header>
+
+      {% block content_block %}
+      {% endblock %}
+
+    <section class="section section--sponsors"> 
+      <div class="grid grid--m"> 
+          <div class="sponsors"> 
+              <div class="sponsors__block sponsors__block--premium"> 
+                  <div class="sponsors__title_1"> 
+                      <h3>Premium Sponsors</h3> 
+                  </div> 
+                  <ul class="sponsors__list u-list-clean"> 
+
+                      <li class="sponsors__item"> 
+                          <!--<a class="trigger" href="https://www.cupraofficial.es/" title="Cupra" target="_blank">-->
+                          <div class= "trigger">
+                              <img src="../../static/images/tokopade_logo.jpg" width="180px" height="150px">
+                              <p class="sponsors__item_name">TOKOROZAWA PADEL<br>NA HITOTACHI</br></p>
+                          </div>
+                           <!--</a>--> 
+                      </li> 
+                      <li class="sponsors__item"> 
+                          <!--<a class="trigger" href="https://www.segurcaixaadeslas.es/es/particulares" title="Adeslas" target="_blank">-->
+                          <div class="trigger">
+                              <img src="../../static/images/nb_padel_logo.jpg" width="180px" height="150px">
+                              <p class="sponsors__item_name">NB PADEL</br></p>
+                          </div>
+                          <!--</a>--> 
+                      </li> 
+                  </ul> 
+
+                  <div class="sponsors__title_2"> 
+                      <h3>Sponsors</h3> 
+                  </div> 
+                  <ul class="sponsors__list u-list-clean"> 
+                      <li class="sponsors__item">
+                        <!--<a class="trigger" href="" title="Adeslas" target="_blank">-->
+                        <div class="trigger">
+                          <img src="../../static/images/padel_kazustagram_logo.jpg" width="180px" height="150px">
+                          <p class="sponsors__item_name">Padel <br>Kazustagram</br></p>
+                        </div>
+                          <!--</a>-->   
+                      </li> 
+                  </ul> 
+              </div>
+          </div>
+      </div>
+  </section>
+
+  </body>
+</html>

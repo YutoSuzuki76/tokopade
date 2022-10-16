@@ -1,0 +1,54 @@
+{% extends "app_folder_HTML/tokopade_navbar.html" %}
+
+{% block content_block %}
+
+<div class="l-grid">
+
+    <!--<div class="c-ranking__block">-->
+    <div class="c-ranking__title">
+        <h3><img src="https://www.worldpadeltour.com/media/images/rank-cat-xx.svg" style="padding: 0px 10px 0px 10px">Women's ranking</h3>
+    </div>
+    <!--</div>--> 
+
+    <div class="c-ranking__block"> 
+        <div class="c-ranking__sponsor"> 
+            <div class="c-advert"> 
+            <div class="c-advert__container"> 
+                <span class="c-advert__custom">Sponsored by</span> 
+                <!--<a href="cupraofficial.es/" class="c-trigger">-->
+                <img class="c-advert__logo" src="../../static/images/tokopade_logo.jpg" width="60px" height="50px" alt="" role="presentation"> 
+                </a> 
+                <span class="c-advert__custom">TOKOROZAWA PADEL NA HITOTACHI</span>
+            </div> 
+            </div>
+        </div>
+
+        <ul class="c-player-card u-list-clean"> 
+            <li class="c-player-card__item">
+              <!--<a class="c-trigger" href="https://www.worldpadeltour.com/en/players/ariana-sanchez-fallada/">-->
+              <div class="c-trigger">
+                {% for values in df_ranking.iterrows %}
+                <div class="blank"></div>
+                <div class="c-player">
+                  <div class="c-player-card__header">
+                    <div class="c-player-card__position">{{ values.1.ranking }}</div>
+                    <div class="c-player-card__name">{{ values.1.name }}</div>
+                  </div>
+                  <div class="blank"></div>
+                  <div class="c-player-card__footer"> 
+                    <div class="l-wrapper"> 
+                      <img class="c-player-card__flag" src="../../static/images/jp.png" width="60px" height="35px"alt="" role="presentation">
+                    </div>
+                    <div class="c-player-card__score">{{ values.1.point }}</div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>                
+              <!--</a>-->
+            </li>
+        </ul> 
+    </div>
+</div>
+{% endblock %}
+
+ 

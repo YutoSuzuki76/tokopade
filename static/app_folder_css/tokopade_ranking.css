@@ -1,0 +1,117 @@
+.c-ranking__title{
+    margin-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 6px solid #EEF3F4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 830px;
+    background-color: #EEF3F4;
+}
+
+.c-ranking__block{
+    overflow: auto;
+    border: 5px solid #EEF3F4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 830px;
+    height: 500px;
+    padding: 0px;
+    display: block;
+}
+
+.c-advert__container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.ranking_table{
+    border:solid 1px #aaaaaa;
+    width: 70%;
+    margin: auto;
+}
+
+.ranking_table th{
+    border:solid 1px #aaaaaa;
+    width: 30%;
+}
+
+.ranking_table td{
+    border:solid 1px #aaaaaa;
+}
+
+.c-trigger{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.blank{
+    float: left;
+    border: 5px solid #FFF;
+    padding: 10px 0px 10px 0px;
+}
+
+.c-player{
+    float: left;
+    border: 5px solid #EEF3F4;
+    padding: 5px 20px 5px 20px;
+}
+
+.c-player-card__header{
+    float: left;
+    width: 300px;
+    height: 100px;
+    padding: 0px 0px 0px 0px;    
+    background: #FFF;
+}
+
+.c-player-card__footer{
+    width: 300px;
+    height: 60px;
+    padding: 0px 0px 0px 0px;
+}
+
+.l-wrapper{
+    float: left;
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    background: #69DFE6;
+}
+
+.c-player-card__score{
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    background: #69DFE6;
+    color: #22356D;
+}
+
+.c-player-card__position{
+    font-size: 30px;
+    color: #22356D;
+}
+
+.c-player-card__name{
+    font-size: 20px;
+    color: #22356D;
+}
+
+.c-player-card__item{
+    display: flex;
+    padding: 0px;
+}
+
+
+.c-player-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
