@@ -1,4 +1,29 @@
+.header_logo{
+    text-align: center;
+}
 
+.nav-pills{
+    display: flex;
+    margin: 0 auto;
+	padding: 0 3%;
+	width: 94%;
+	max-width: 960px; 
+}
+
+.nav-item{
+    flex: 1 0 auto;
+    padding: 35px 0px 5px;
+}
+
+.nav-link{
+    display: block;
+    padding: 0px 0px 20px;
+    color: #22356D;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "CiutadellaMedium";
+}
 
 .sponsors{
     display: flex;
